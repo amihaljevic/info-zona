@@ -1,0 +1,137 @@
+.article {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    flex-grow: 1;
+  }
+
+  &__tags {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  &__tag {
+    @extend .tag;
+  }
+
+  &__tag--small {
+    @extend .tag--small;
+  }
+
+  &__tag--large {
+    @extend .tag--large;
+  }
+
+  &__figure {
+    display: block;
+    height: auto;
+    aspect-ratio: 648 / 400;
+    background-color: #dee0e0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+
+  &__date {
+    @extend .text-caption--date;
+
+    display: flex;
+    align-items: baseline;
+
+    &--underline {
+      border-block-end: 2px solid var(--color-primary-light);
+      flex-grow: 1;
+    }
+  }
+
+  &--small {
+    display: grid;
+    grid-template-columns: minmax(8.75rem, 12.1875rem) minmax(13.25rem, 1fr);
+    column-gap: 1.5rem;
+
+    .article__content {
+      order: 2;
+    }
+
+    .article__title {
+      @extend .text-heading--h3;
+
+      order: 2;
+    }
+
+    .article__date {
+      max-width: max(17.125rem, 13.25rem);
+    }
+
+    .article__figure {
+      aspect-ratio: 195 / 120;
+    }
+  }
+
+  &--medium {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+    .article__content {
+      order: 2;
+    }
+
+    .article__title {
+      @extend .text-heading--h2;
+
+      order: 2;
+    }
+
+    .article__figure {
+      width: auto;
+    }
+  }
+
+  &--featured {
+    .container {
+      container-type: inline-size;
+      container-name: featured;
+    }
+  }
+
+  &--large {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 1.5rem;
+    max-width: 70.5rem;
+
+    .article__title {
+      @extend .text-display--h1;
+    }
+
+    .article__date {
+      max-width: min(23.125rem, 19.5rem);
+    }
+  }
+}
+
+@container featured (min-width: 69.25rem) {
+  .article--featured {
+    .article--large {
+      flex-direction: row;
+      column-gap: 3rem;
+    }
+
+    .article__figure {
+      width: min(40.5rem, 100%);
+      order: 2;
+    }
+  }
+}

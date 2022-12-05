@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap");
+
+:root {
+  /* Fonts */
+  /* Font sizes were generated with the help of Fluid Type Scale. URL: https://www.fluid-type-scale.com/ */
+  --font-sans: "Kanit", sans-serif;
+
+  --font-size-h1-max: 4.5rem; // 72px
+  --font-size-h1-min: 3rem; // 48px
+  --font-size-h1-line-height: 1; /* identical to box height, or 100% */
+  --font-size-h1-max-spacing-after: 2.5rem; // 40
+  --font-size-h1-min-spacing-after: 1.5rem; // 24
+  --font-size-h1: clamp(
+    var(--font-size-h1-min),
+    2.34vw + 2.39rem,
+    var(--font-size-h1-max)
+  );
+
+  --font-size-h2-max: 2rem; // 32px
+  --font-size-h2-min: 1.5rem; // 24px
+  --font-size-h2-line-height: 1; /* identical to box height, or 100% */
+  --font-size-h2-max-spacing-after: 1.5rem; // 24
+  --font-size-h2-min-spacing-after: 1rem; // 16
+  --font-size-h2: clamp(
+    var(--font-size-h2-min),
+    0.78vw + 1.3rem,
+    var(--font-size-h2-max)
+  );
+
+  --font-size-h3-max: 1.5rem; // 24px
+  --font-size-h3-min: 1.25rem; // 20px
+  --font-size-h3-line-height: 1; /* identical to box height, or 100% */
+  --font-size-h3-max-spacing-after: 1rem; // 16
+  --font-size-h3-min-spacing-after: 1rem; // 16
+  --font-size-h3: clamp(
+    var(--font-size-h3-min),
+    0.39vw + 1.15rem,
+    var(--font-size-h3-max)
+  );
+
+  --font-size-p-max: 1.25rem; // 20px
+  --font-size-p-min: 1rem; // 16px
+  --font-size-p-line-height-max: 1.6; /* identical to box height, or 160% */
+  --font-size-p-line-height-min: 1.5; /* identical to box height, or 150% */
+  --font-size-p-max-spacing-after: 1.5rem; // 24
+  --font-size-p-min-spacing-after: 1rem; // 16
+  --font-size-p: clamp(
+    var(--font-size-p-min),
+    0.39vw + 0.9rem,
+    var(--font-size-p-max)
+  );
+
+  --font-size-caption-date-max: 1.25rem; // 20px
+  --font-size-caption-date-min: 1rem; // 16px
+  --font-size-caption-date-line-height-max: 1.2; /* identical to box height, or 120% */
+  --font-size-caption-date-line-height-min: 1.5; /* identical to box height, or 150% */
+  --font-size-caption-date-max-spacing-after: 1rem; // 16
+  --font-size-caption-date-min-spacing-after: 1rem; // 16
+  --font-size-caption-date: clamp(
+    var(--font-size-caption-date-min),
+    0.39vw + 0.9rem,
+    var(--font-size-caption-date-max)
+  );
+
+  --font-size-caption-tag-max: 1rem; // 16px
+  --font-size-caption-tag-min: 0.8125rem; // 13px
+  --font-size-caption-tag-line-height-max: 1.5; /* identical to box height, or 150% */
+  --font-size-caption-tag-line-height-min: 1.85; /* identical to box height, or 185% */
+  --font-size-caption-tag-max-spacing-after: 1rem; // 16
+  --font-size-caption-tag-min-spacing-after: 1rem; // 16
+  --font-size-caption-tag: clamp(
+    var(--font-size-caption-tag-min),
+    0.29vw + 0.74rem,
+    var(--font-size-caption-tag-max)
+  );
+
+  --font-size-footer-max: 1rem; // 16px
+  --font-size-footer-min: 0.8125rem; // 13px
+  --font-size-footer-line-height-max: 1.5; /* identical to box height, or 150% */
+  --font-size-footer-line-height-min: 1.85; /* identical to box height, or 185% */
+  --font-size-footer-max-spacing-after: 1rem; // 16
+  --font-size-footer-min-spacing-after: 1rem; // 16
+  --font-size-footer: clamp(
+    var(--font-size-footer-min),
+    0.29vw + 0.74rem,
+    var(--font-size-footer-max)
+  );
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #191919;
+  --color-green: #68ff21;
+  --color-orange: #ffa800;
+  --color-red: #ff3030;
+  --color-blue: #105bfb;
+
+  --color-primary: var(--color-black);
+  --color-primary-light: #bababa;
+  --color-primary-xlight: #e4e4e4;
+  --color-secondary: #fef35b;
+  --color-secondary-light: #fff9ad;
+
+  --color-border-light: #e4e4e4;
+}

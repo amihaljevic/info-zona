@@ -1,0 +1,27 @@
+.tag {
+  display: inline-flex;
+  place-content: center;
+  column-gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid var(--color-primary);
+
+  font-family: var(--font-sans);
+  font-size: var(--font-size-caption-tag-min);
+  font-weight: 600;
+  line-height: var(--font-size-caption-tag-line-height-min);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+
+  &--small {
+    padding: 0 0.5rem;
+  }
+
+  &--large {
+    padding: 0.5rem 1rem;
+
+    font-size: var(--font-size-caption-tag-max);
+    font-weight: 600;
+    line-height: var(--font-size-caption-tag-line-height-max);
+  }
+}

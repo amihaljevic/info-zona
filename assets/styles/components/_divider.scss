@@ -1,0 +1,9 @@
+.divider {
+  border: none;
+  border-bottom: 2.5px solid var(--color-primary);
+  margin-block: 3.5rem;
+
+  &--light {
+    border-color: var(--color-primary-xlight);
+  }
+}

@@ -1,0 +1,13 @@
+.layout {
+  &--half {
+    &__wrapper {
+      display: grid;
+      row-gap: 2.75rem;
+
+      @media screen and (min-width: 68.125rem) {
+        grid-template-columns: minmax(37.25rem, 1fr) minmax(23.125rem, 28.5rem);
+        column-gap: 4.75rem;
+      }
+    }
+  }
+}

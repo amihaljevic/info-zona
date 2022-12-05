@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap");
+
+h1,
+.text-display--h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2,
+.text-heading--h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3,
+.text-heading--h3 {
+  font-size: var(--font-size-h3);
+}
+
+p,
+.text--p {
+  font-size: var(--font-size-p);
+}
+
+.text-caption {
+  &--date {
+    font-size: var(--font-size-caption-date);
+    color: var(--color-primary-light);
+  }
+
+  &--tag {
+    font-size: var(--font-size-caption-tag);
+  }
+}
+
+.text--footer {
+  font-size: var(--font-size-footer);
+}

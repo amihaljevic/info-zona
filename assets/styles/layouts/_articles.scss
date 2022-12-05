@@ -1,0 +1,14 @@
+.articles {
+  display: grid;
+
+  &--horizontal {
+    grid-template-columns: repeat(auto-fill, minmax(21.875rem, 1fr));
+    column-gap: 2.4375rem;
+    row-gap: 2rem;
+  }
+
+  &--vertical {
+    row-gap: 3rem;
+    grid-template-columns: minmax(23.125rem, 37.25rem);
+  }
+}

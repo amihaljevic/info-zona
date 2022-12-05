@@ -120,6 +120,39 @@
       max-width: min(23.125rem, 19.5rem);
     }
   }
+
+  &--article {
+    display: grid;
+    row-gap: 2rem;
+
+    .card__title {
+      @extend .text-display--h1;
+    }
+
+    .card__date {
+      max-width: min(23.125rem, 19.5rem);
+    }
+
+    .card__figure {
+      position: relative;
+
+      &::before {
+        content: url("/assets/icons/icon-tape.svg");
+        position: absolute;
+        rotate: 151.27deg;
+        top: -1rem;
+        left: -2.875rem;
+      }
+
+      &::after {
+        content: url("/assets/icons/icon-tape.svg");
+        position: absolute;
+        rotate: -27.27deg;
+        bottom: -0.5rem;
+        right: -2.875rem;
+      }
+    }
+  }
 }
 
 @container featured (min-width: 69.25rem) {

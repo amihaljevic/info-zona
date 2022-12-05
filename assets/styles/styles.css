@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap");
 :root {
   /* Fonts */
@@ -95,6 +95,7 @@
 
 h1,
 .text-display--h1,
+.card--article .card__title,
 .card--large .card__title {
   font-size: var(--font-size-h1);
 }
@@ -112,8 +113,18 @@ h3,
 }
 
 p,
-.text--p {
+.text--p,
+.article__link {
   font-size: var(--font-size-p);
+  font-weight: 500;
+}
+
+.text-p--light {
+  font-weight: 300;
+}
+
+.text-p--underline, .article__link {
+  text-decoration: underline;
 }
 
 .text-caption--date, .card__date {
@@ -349,6 +360,30 @@ h6 {
 }
 .card--large .card__date {
   max-width: 19.5rem;
+}
+.card--article {
+  display: grid;
+  row-gap: 2rem;
+}
+.card--article .card__date {
+  max-width: 19.5rem;
+}
+.card--article .card__figure {
+  position: relative;
+}
+.card--article .card__figure::before {
+  content: url("/assets/icons/icon-tape.svg");
+  position: absolute;
+  rotate: 151.27deg;
+  top: -1rem;
+  left: -2.875rem;
+}
+.card--article .card__figure::after {
+  content: url("/assets/icons/icon-tape.svg");
+  position: absolute;
+  rotate: -27.27deg;
+  bottom: -0.5rem;
+  right: -2.875rem;
 }
 
 @container featured (min-width: 69.25rem) {
@@ -604,4 +639,56 @@ h6 {
   .footer .divider {
     display: none;
   }
+}
+
+.article__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(31.6794rem, 1fr));
+  row-gap: 2rem;
+  -moz-column-gap: 4.625rem;
+       column-gap: 4.625rem;
+}
+.article__intro {
+  display: inline;
+  background-color: var(--color-secondary-light);
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: 10px 0 0 var(--color-secondary-light), -10px 0 0 var(--color-secondary-light);
+  line-height: 1.8;
+}
+.article__content p + p {
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+}
+.article__footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(31.6794rem, 1fr));
+  -moz-column-gap: 4.625rem;
+       column-gap: 4.625rem;
+  -webkit-margin-before: 5.125rem;
+          margin-block-start: 5.125rem;
+}
+@media screen and (max-width: 70.9375rem) {
+  .article__footer {
+    display: none;
+  }
+}
+.article__footer--share {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  grid-column: 2;
+  grid-row: 1;
+}
+.article__footer .share-icons {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.article__footer .icon__right {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
 }/*# sourceMappingURL=styles.css.map */
